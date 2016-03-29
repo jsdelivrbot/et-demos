@@ -1,0 +1,22 @@
+{
+  "name": "dbmonster",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node dev-server"
+  },
+  "author": "suyu34",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "et-template": "^0.4.0-beta3",
+    "file-loader": "^0.8.5",
+    "loader-utils": "^0.2.13",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
