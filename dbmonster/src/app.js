@@ -7,8 +7,9 @@ require('bootstrap/dist/css/bootstrap.css')
 const Table = require('./table.html')
 const getDatabases = require('./data.js')
 
-let content = document.getElementById('app')
-var table = new Table({dbs: getDatabases()})
+const content = document.getElementById('app')
+const table = new Table({dbs: getDatabases()})
+console.log({dbs: getDatabases()})
 table.update()
 content.appendChild(table.get())
 

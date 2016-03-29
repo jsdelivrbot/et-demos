@@ -1,3 +1,4 @@
-# ET 管理dom生命周期的模板
+# deoms for et-template
+The template to manage the life cycle of dom.
 
-编译几乎完成，将要进行最后的调整，发布即将到来。
+

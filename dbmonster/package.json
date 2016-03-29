@@ -2,7 +2,8 @@
   "name": "dbmonster",
   "version": "1.0.0",
   "scripts": {
-    "start": "node dev-server"
+    "start": "webpack-dev-server --port 8809 --progress",
+    "build": "webpack --display-error-details --progress"
   },
   "author": "suyu34",
   "license": "MIT",
@@ -10,13 +11,14 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "css-loader": "^0.23.1",
-    "et-template": "^0.4.0-beta3",
+    "et-dependency": "^0.4.0",
+    "et-loader": "^1.1.0",
     "file-loader": "^0.8.5",
-    "loader-utils": "^0.2.13",
+    "loader-utils": "^0.2.14",
     "style-loader": "^0.13.1",
     "underscore": "^1.8.3",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.14",
+    "webpack": "^1.12.15",
     "webpack-dev-server": "^1.14.1"
   }
 }

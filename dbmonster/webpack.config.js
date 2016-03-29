@@ -6,12 +6,12 @@ const fontName = 'fonts/[name].[hash:8].[ext]'
 module.exports = {
   entry: './src/app',
   output: {
-    path: 'dist',
-    filename: '[name].js'
+    path: './dist',
+    filename: 'app.js'
   },
   module: {
     loaders: [
-      {test: /\.html$/, loader: path.resolve(__dirname, 'et')},
+      {test: /\.html/, loader: 'et'},
       {test: /\.css$/, loader: 'style!css'},
       {test: /\.svg$/, loader: 'file', query: {name: fontName}},
       {test: /\.woff((\?|\#)[\?\#\w\d_-]+)?$/, loader: 'url', query: {limit: 100, minetype: 'application/font-woff', name: fontName}},
@@ -22,5 +22,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js']
-  }
+  },
+  devtool: 'inline-source-map'
 }
