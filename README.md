@@ -1,4 +1,4 @@
-# deoms for et-template
+# demons for et-template
 The template to manage the life cycle of dom.
 
 
